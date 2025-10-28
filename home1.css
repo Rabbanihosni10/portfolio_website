@@ -1,0 +1,231 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+        }
+
+        .box1 {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #16213e;
+            border: 3px solid #0f3460;
+            border-radius: 10px;
+        }
+
+        .topbar {
+            background: #0f3460;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .topbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .bracuLogo{
+            size: 5%;
+        }
+
+        .topbar a {
+            color: #e94560;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border: 2px solid #e94560;
+            border-radius: 5px;
+        }
+
+        .topbar a:hover {
+            background: #e94560;
+            color: white;
+        }
+
+        .bigbox {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #0f3460 0%, #533483 100%);
+        }
+
+        .pic1 {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #e94560;
+            margin-bottom: 20px;
+        }
+
+        .bigbox h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #00d9ff;
+        }
+
+        .bigbox p {
+            color: #ffd700;
+            font-size: 1.1rem;
+        }
+
+        .part {
+            padding: 30px;
+            border-bottom: 2px dashed #0f3460;
+        }
+
+        .part h2 {
+            color: #00d9ff;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            background: #0f3460;
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 5px solid #e94560;
+        }
+
+        .part h3 {
+            color: #ffd700;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .box2 {
+            background: #0f3460;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #e94560;
+            font-style: italic;
+            color: #ddd;
+            border-radius: 5px;
+        }
+
+        .list1 {
+            list-style: none;
+        }
+
+        .list1 li {
+            padding: 12px;
+            margin: 10px 0;
+            background: #0f3460;
+            border-left: 4px solid #e94560;
+            border-radius: 3px;
+            color: #ddd;
+        }
+
+        .table1 {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .table1 th {
+            background: #e94560;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .table1 td {
+            padding: 15px;
+            border: 1px solid #0f3460;
+            background: #1a1a2e;
+            color: #ddd;
+        }
+
+        .table1 tr:nth-child(even) td {
+            background: #0f3460;
+        }
+
+        .grid1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card1 {
+            background: #0f3460;
+            padding: 25px;
+            text-align: center;
+            border: 2px solid #e94560;
+            border-radius: 10px;
+        }
+
+        .card1 h3 {
+            color: #00d9ff;
+            margin-bottom: 10px;
+        }
+
+        .card1 a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card1 a:hover {
+            color: #e94560;
+        }
+
+        .pics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .picbox {
+            border: 3px solid #e94560;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .pic2 {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .txt1 {
+            padding: 10px;
+            background: #e94560;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .bottom {
+            background: #0f3460;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .bottom a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .bottom a:hover {
+            color: #e94560;
+        }
+
+        @media (max-width: 768px) {
+            .grid1, .pics {
+                grid-template-columns: 1fr;
+            }
+            
+            .topbar ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
