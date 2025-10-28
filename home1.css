@@ -17,6 +17,10 @@
             border: 3px solid #0f3460;
             border-radius: 10px;
         }
+        .strong1{
+            color: white;
+            font-weight: bold;
+        }
 
         .topbar {
             background: #0f3460;
